@@ -4,6 +4,7 @@ title: " 变分法简介Part 1. "
 subtitle: "Intro to Calculus of Variation - Part I"
 author: "Yue"
 header-mask: 0.4
+header-style: text
 catalog: true
 mathjax: true
 tags:
