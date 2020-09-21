@@ -77,13 +77,13 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 \tilde{I}(\epsilon)=\tilde{I}| _ {\epsilon=0}+(\frac{d\tilde{I}}{d\epsilon})\Big| _ {\epsilon=0}\cdot\epsilon+ (\frac{d^2\tilde{I}}{d\epsilon^2})\Big|_{\epsilon=0}\cdot\frac{\epsilon^2}{2!} +\cdot \cdot \cdot =\tilde{I}_0+\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
 \end{align}
 
-很明显，当$\epsilon=0$时，$\tilde{I}|_{\epsilon=0}=I$,带入上式可得到：
+很明显，当$\epsilon=0$时，$\tilde{I}|_ {\epsilon=0}=I$,带入上式可得到：
 
 \begin{align}
 \tilde{I}-I=\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
 \end{align}
 
-这里我们记$\delta I=\tilde{I}_ 1\epsilon=\frac{d\tilde{I}}{d\epsilon}\Big|_{\epsilon=0}\cdot\epsilon$，并称之为一阶变分。同理二阶变分为$\delta I^2=\tilde{I}_2\epsilon^2$。
+这里我们记$\delta I=\tilde{I}_ 1\epsilon=\frac{d\tilde{I}}{d\epsilon}\Big|_ {\epsilon=0}\cdot\epsilon$，并称之为一阶变分。同理二阶变分为$\delta I^2=\tilde{I}_2\epsilon^2$。
 
 （这里插一句变分和微分的区别。变分在上图的直观解释是$\tilde{y}$和$y$在竖直方向上的距离，称之为$\delta y$，所以这个差是在同一个$x$上计算的。而微分则是由于$x$的微小变动引起的$y$的变动。）
 
