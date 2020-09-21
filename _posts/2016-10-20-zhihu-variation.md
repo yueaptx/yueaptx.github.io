@@ -64,6 +64,7 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 
 图像直观表示如下图：
 
+![img](/img/in-post/FEM/intro_to_calculus_p1_img2.png)
 
 由于在边界条件的限制，$\eta(x_1)=\eta(x_2)=0$。这样就能保证$\tilde{y}(x)$可以通过两个固定端点。
 这时我们可以说，$y(x)$所对应的泛函数$I$的值是泛函数$\tilde{I}=\int_{x_1}^{x_2}F(\tilde{y},\tilde{y}';x)dx$的极值。我们可以进一步用$\epsilon$表示$\tilde{I}$：
