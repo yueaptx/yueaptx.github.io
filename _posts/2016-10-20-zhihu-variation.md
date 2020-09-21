@@ -37,6 +37,8 @@ I(y)=\int_{x1}^{x2}F(y,y';x)dx
 Example 1.
 一个最简单直观的例子是求两个固定点之间的最短路径。当然大家都知道两点之间直线最短，这里可以用变分法做出解释。
 
+https://github.com/yueaptx/yueaptx.github.io/blob/master/_posts/img/intro_to_calculus_p1_img1.png
+
 
 如上图所示路径是一任意路径，我们取区中一小段微元$ds$，可以容易计算微元断的长度为:$ds^2=dx^2+dy^2=[1+(y')^2]dx^2$，即:
 
