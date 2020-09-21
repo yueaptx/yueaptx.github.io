@@ -119,8 +119,8 @@ I^* =I+\lambda J=\int_{x_1}^{x_2}(F+\lambda G)dx=\int_{x_1}^{x_2}F^*(y,y';x)dx
 现在引用圆的参数方程：
 
 \begin{align} 
-x-x_0&=\lambda \text{cos} t \\ 
-y-y_0&=\lambda \text{sin} t\ \ \ \ t \in [0,2\pi] 
+x-x_0=\lambda \text{cos} t; \ \ \ 
+y-y_0=\lambda \text{sin} t\ \ \ \ t \in [0,2\pi] 
 \end{align}
 
 带入原约束方程：
