@@ -77,7 +77,7 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 \tilde{I}(\epsilon)=\tilde{I}| _ {\epsilon=0}+(\frac{d\tilde{I}}{d\epsilon})\Big| _ {\epsilon=0}\cdot\epsilon+ (\frac{d^2\tilde{I}}{d\epsilon^2})\Big|_{\epsilon=0}\cdot\frac{\epsilon^2}{2!} +\cdot \cdot \cdot =\tilde{I}_0+\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
 \end{align}
 
-很明显，当$\epsilon=0$时，$\tilde{I}|_{\epsilon=0}=I$,带入上式可得到：
+很明显，当$\epsilon=0$时，$\tilde{I}| _{\epsilon=0}=I$,带入上式可得到：
 
 \begin{align}
 \tilde{I}-I=\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
