@@ -74,7 +74,7 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 虽然$y(x)$未知，但是根据之前的合理假设，$y(x)$是一个存在的确定函数。所以根据上式，如果给定一个特定的$\eta(x)$，$\tilde{I}$的变化只取决于$\epsilon$的变化。所以我们现在可以把$\tilde{I}$看做是$\epsilon$的函数。用泰勒展开公式将$\tilde{I}$在$\epsilon=0$处展开得到：
 
 \begin{align}
-\tilde{I}(\epsilon)=\tilde{I}|_{\epsilon=0}+(\frac{d\tilde{I}}{d\epsilon})\Big|_{\epsilon=0}\cdot\epsilon+ (\frac{d^2\tilde{I}}{d\epsilon^2})\Big|_{\epsilon=0}\cdot\frac{\epsilon^2}{2!} +\cdot \cdot \cdot =\tilde{I}_0+\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
+\tilde{I}(\epsilon)=\tilde{I}| _ {\epsilon=0}+(\frac{d\tilde{I}}{d\epsilon})\Big| _ {\epsilon=0}\cdot\epsilon+ (\frac{d^2\tilde{I}}{d\epsilon^2})\Big|_{\epsilon=0}\cdot\frac{\epsilon^2}{2!} +\cdot \cdot \cdot =\tilde{I}_0+\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
 \end{align}
 
 很明显，当$\epsilon=0$时，$\tilde{I}|_{\epsilon=0}=I$,带入上式可得到：
@@ -83,15 +83,15 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 \tilde{I}-I=\tilde{I}_1\epsilon+\tilde{I}_2\epsilon^2+\cdot \cdot \cdot 
 \end{align}
 
-这里我们记$\delta I=\tilde{I}_1\epsilon=\frac{d\tilde{I}}{d\epsilon}\Big|_{\epsilon=0}\cdot\epsilon$，并称之为一阶变分。同理二阶变分为$\delta I^2=\tilde{I}_2\epsilon^2$。
+这里我们记$\delta I=\tilde{I}_ 1\epsilon=\frac{d\tilde{I}}{d\epsilon}\Big|_{\epsilon=0}\cdot\epsilon$，并称之为一阶变分。同理二阶变分为$\delta I^2=\tilde{I}_2\epsilon^2$。
 
 （这里插一句变分和微分的区别。变分在上图的直观解释是$\tilde{y}$和$y$在竖直方向上的距离，称之为$\delta y$，所以这个差是在同一个$x$上计算的。而微分则是由于$x$的微小变动引起的$y$的变动。）
 
 然后我们可以类比求函数极值时的做法。求函数极值时，我们会令函数的一阶导数为零。这里同样，为了求泛函数$\tilde{I}$的极值，我们令一阶变分$\delta I=0$。现在我们计算化简$\delta I$:
 
 \begin{align}
-\delta I=(\int_{x_1}^{x_2}\frac{d\tilde{F}}{d\epsilon}\Big|_{\epsilon=0} dx)\cdot\epsilon\\
-\frac{d\tilde{F}}{d\epsilon}\Big|_{\epsilon=0} \cdot\epsilon=(\frac{\partial\tilde{F}}{\partial\tilde{y}}\cdot\frac{d\tilde{y}}{d\epsilon}+  \frac{\partial\tilde{F}}{\partial\tilde{y'}}\cdot\frac{d\tilde{y'}}{d\epsilon})\Big|_{\epsilon=0}\cdot\epsilon
+\delta I=(\int_{x_1}^{x_2}\frac{d\tilde{F}}{d\epsilon}\Big|_ {\epsilon=0} dx)\cdot\epsilon\\
+\frac{d\tilde{F}}{d\epsilon}\Big|_ {\epsilon=0} \cdot\epsilon=(\frac{\partial\tilde{F}}{\partial\tilde{y}}\cdot\frac{d\tilde{y}}{d\epsilon}+  \frac{\partial\tilde{F}}{\partial\tilde{y'}}\cdot\frac{d\tilde{y'}}{d\epsilon})\Big|_{\epsilon=0}\cdot\epsilon
 \end{align}
 
 因为$\tilde{y}(x)=y(x)+\epsilon\eta(x)$, 不难得到：$\frac{d\tilde{y}}{d\epsilon}=\eta ,\frac{d\tilde{y'}}{d\epsilon}=\eta'$ ,另外我们有$\delta y=\epsilon \eta,\delta y'=\epsilon\eta'$
@@ -112,7 +112,9 @@ L=\int_{x1}^{x2}ds=\int_{x1}^{x2}\sqrt{1+(y')^2}dx
 \end{align}
 
 这就是传说中的欧拉-拉格朗日方程(E-L equation)。
+
 而第二部分等于零则是边界条件。
+
 在Part 2.， 我们会以用这次介绍的内容和上述方程解决两点之间直线最短的问题为开头，继续介绍变分法。
 
 注[1]:
