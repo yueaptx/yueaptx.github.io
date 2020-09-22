@@ -30,7 +30,7 @@ $\underline{\underline{\sigma}}=\sigma_{11}\hat{e_1}\hat{e_1}+\sigma_{12}\hat{e_
 
 $\underline{\underline{\sigma}}=\sigma_{ij}\hat{e_i}\hat{e_j}$
 
-这里乘积项中i和j各出现了两次，所以都要进行求和，对于某一个i，j有三项要求和，而i本身又有三项求和，所以一共有3*3=9项。如果对这个过程不熟悉的，可以先写出带有求和符号的式子：$\underline{\underline{\sigma}}=\sum_{i=1}^{3}{\sum_{j=1}^{3}{\sigma_{ij}\hat{e_i}\hat{e_j}} }$，然后把求和符号去掉就行了。
+这里乘积项中$i$和$j$各出现了两次，所以都要进行求和，对于某一个$i$，$j$有三项要求和，而$i$本身又有三项求和，所以一共有3*3=9项。如果对这个过程不熟悉的，可以先写出带有求和符号的式子：$\underline{\underline{\sigma}}=\sum_{i=1}^{3}{\sum_{j=1}^{3}{\sigma_{ij}\hat{e_i}\hat{e_j}} }$，然后把求和符号去掉就行了。
 
 运用Index notation时有一些重要的规则需要遵守。如果不注意会造成混乱。
 
@@ -41,8 +41,9 @@ $\underline{\underline{\sigma}}=\sigma_{ij}\hat{e_i}\hat{e_j}$
 接下来我们引入一个很有用的量: Kronecker delta($\delta_{ij}$)，它的定义为：
 
 $\delta_{ij}=1, \hspace{.2in} if\hspace{.1in} i=j;$
+$\delta_{ij}=0, \hspace{.2in} if\hspace{.1in} i\ne j;$
 
-上述定义和单位向量的乘积是一致的。比如$\hat{e_i}\cdot\hat{e_j}$在$i=j$的情况下等于1，在$i\ne j$的情况下等于0，所以我们有：$\delta_{ij}=\hat{e_i}\cdot\hat{e_j}$。$\delta_{ij}$同样是有9项，我们可以把它当成是一个二阶张量的9个分量，写成矩阵的形式就是单位矩阵I。这个不难理解，因为单位矩阵是对角线上的项等于1，其他分量等于0。而对角线上的分量就是两个下标相等的情况。趁热问个tricky的问题: 那$\delta_{kk}$是多少呢？等于3，因为k出现了两次，根据summation convention,需要进行求和，即等于$\delta_{11}+\delta_{22}+\delta_{33}=3$。
+上述定义和单位向量的乘积是一致的。比如$\hat{e_i}\cdot\hat{e_j}$在$i=j$的情况下等于1，在$i\ne j$的情况下等于0，所以我们有：$\delta_{ij}=\hat{e_i}\cdot\hat{e_j}$。$\delta_{ij}$同样是有9项，我们可以把它当成是一个二阶张量的9个分量，写成矩阵的形式就是单位矩阵I。这个不难理解，因为单位矩阵是对角线上的项等于1，其他分量等于0。而对角线上的分量就是两个下标相等的情况。趁热问个tricky的问题: 那$\delta_{kk}$是多少呢？等于3，因为$k$出现了两次，根据summation convention,需要进行求和，即等于$\delta_{11}+\delta_{22}+\delta_{33}=3$。
 
 Kronecker delta有个令人兴奋的性质，举个例子说：$a_i\delta_{ij}=a_j$。语言叙述就是当某一项和Kronecker delta相乘时，如果它有和Kronecker delta相同的下标，那么可以将这个下标改成delta的另一个下标然后去掉delta。在例子中，$a_i$和$\delta_{ij}$有相同的下标i，所以可以把这个$i$改成$\delta_{ij}$的另一个下标j，然后去掉$\delta_{ij}$，就变成了$a_j$。这个性质很好证明，只要按照求和展开就一目了然了，之后就可以无脑使用了。
 
