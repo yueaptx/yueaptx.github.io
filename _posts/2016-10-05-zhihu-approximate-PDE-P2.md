@@ -43,7 +43,7 @@ $I[y(x);x]=\int_{0}^{2}[0.5(y'')^2+5(y')^2+2y^2+y]dx-10y(0)$
 
 Essential Boundary Conditions: $y(2)=0$； $y'(0)=-2$
 
-Natural Boundary Conditions: $y'''(0)=-10$； $y''(2)=0$
+Natural Boundary Conditions: $y''\'(0)=-10$； $y'\'(2)=0$
 
 求解最小化泛函数$I$的解$y(x)$。
 
@@ -55,7 +55,7 @@ Natural Boundary Conditions: $y'''(0)=-10$； $y''(2)=0$
 
 $y''''-10y''+4y+1=0, \ \ 0<x<2$，（加上上述题目中的边界条件）
 
-基本思路是写出I的一阶变分$\delta I=\int^2_0 [y''\delta (y'')+10y'\delta(y')+4y\delta y+\delta y] dx$,然后再分部积分，即可得到$\delta I=\int^2_0 (y''''-10y''+4y+1)\delta y\  dx+\text{Boundary terms}$。【注1】
+基本思路是写出I的一阶变分$\delta I=\int^2_0 [y'\'\delta (y'\')+10y'\delta(y')+4y\delta y+\delta y] dx$,然后再分部积分，即可得到$\delta I=\int^2_0 (y'''\'-10y'\'+4y+1)\delta y\  dx+\text{Boundary terms}$。【注1】
 
 总之现在问题就变成使用Strong Form Galerkin求解一个带有边界条件的PDE。回顾下文章开头，第一步是设出PDE的近似解，我们一般采用多项式形式。这里要注意，使用Strong Form Galerkin的时候，设的近似解既要满足Essential boundary condition又要满足Natural Boundary condition。也就是说在本例中，四个边界条件都需要满足。假设我们只用一个未知系数，那么这个多项式必须要是四次的，即：
 
@@ -73,11 +73,11 @@ $\tilde{y}(x)=-\frac{5}{3}x^3+10x^2-2x-\frac{68}{3} +a_4(x^4-24x^2+80)$
 
 接着计算残差或者余量：
 
-$R=\tilde{y}''''-10\tilde{y}''+4\tilde{y}$，可见$R$是$a_4$和$x$的函数。
+$R=\tilde{y}'''\'-10\tilde{y}'\'+4\tilde{y}$，可见$R$是$a_4$和$x$的函数。
 
 最后计算加权积分：
 
-$\int^2_0[(\tilde{y}''''-10\tilde{y}''+4\tilde{y}+1)(x^4-24x^2+80)]dx=0$
+$\int^2_0[(\tilde{y}'''\'-10\tilde{y}'\'+4\tilde{y}+1)(x^4-24x^2+80)]dx=0$
 
 上式仅有一个未知数$a_4$，可以解得其值为0.2985，所以最终求得的近似解是：
 
@@ -92,8 +92,8 @@ $\tilde{y}(x)=-\frac{5}{3}x^3+10x^2-2x-\frac{68}{3} +0.2985(x^4-24x^2+80)$
 【注1】
 下面两个等式是由分部积分得来的：
 
-$\int^2_0 [y''\delta y''] dx=\int^2_0[y''''\delta y] dx-y'''\delta y\|_0^2+y''\delta y'\|_0^2$
+$\int^2_0 [y'\'\delta y''] dx=\int^2_0[y'''\'\delta y] dx-y'''\delta y\|_0^2+y'\'\delta y'\|_0^2$
 
-$\int_0^2 [10y'\delta y'] dx=10(-\int^2_0[y''\delta y] dx+y'\delta y\|^2_0)$
+$\int_0^2 [10y'\delta y'] dx=10(-\int^2_0[y'\'\delta y] dx+y'\delta y\|^2_0)$
 
 注1之前的那个式子是把所有积分项合并，然后其余边界项统一称为Boundary terms得到的。
