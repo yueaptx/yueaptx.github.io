@@ -35,7 +35,7 @@ Example. 1
 
 我们可以写出系统势能（具体为什么是这个式子之后的文章会解释，这次着重于介绍方法的思想）：$\Pi=\frac{1}{2}\int_{0}^{L}  EA(u')^2dx-Pu_0$。
 
-由于左端固定，右端位移已知，所以有两个Essential Boundary Conditions: $u\Big|_ {x=0}=0$。
+由于左端固定，右端位移已知，所以有两个Essential Boundary Conditions: $u\Big|_{x=0}=0$。
 
 根据上文的思路，我们设待求函数$u(x)$的形式为多项式$\tilde{u}(x)=a_0+a_1x+a_2x^2$ 。这里姑且先设成二次形式。一般来说，设的次数越高，近似解越精确，但是由于本例精确解就是个一次线性方程，所以只要设的函数高于1次，近似解就和精确解相同。另一个需要注意的是，使用Rayleigh-Ritz法时，**设的近似方程（如本例中的$\tilde{u}(x)$ ）必须满足Essential Boundary Conditions(不必须满足Natural Boundary Condition)**。遵循这点，我们可以得出两个等式：
 
