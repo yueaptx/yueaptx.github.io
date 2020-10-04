@@ -92,8 +92,8 @@ $\tilde{y}(x)=-\frac{5}{3}x^3+10x^2-2x-\frac{68}{3} +0.2985(x^4-24x^2+80)$
 【注1】
 下面两个等式是由分部积分得来的：
 
-$\int^2_0 [y''\delta y''] dx=\int^2_0[y''''\delta y] dx-y'''\delta y\Big|_0^2+y''\delta y'\Big|_0^2$
+$\int^2_0 [y''\delta y''] dx=\int^2_0[y''''\delta y] dx-y'''\delta y\|_0^2+y''\delta y'\|_0^2$
 
-$\int_0^2 [10y'\delta y'] dx=10(-\int^2_0[y''\delta y] dx+y'\delta y\Big|^2_0)$
+$\int_0^2 [10y'\delta y'] dx=10(-\int^2_0[y''\delta y] dx+y'\delta y\|^2_0)$
 
 注1之前的那个式子是把所有积分项合并，然后其余边界项统一称为Boundary terms得到的。
